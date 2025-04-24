@@ -20,11 +20,12 @@ export default {
     },
     extend: {
       colors: {
-        border: '#333333', // Added border color
+        border: '#333333', // Border color
         background: {
           DEFAULT: '#000000', // Pure black
           foreground: '#FFFFFF' // White text
         },
+        foreground: '#F1F0FB', // Adding explicit foreground color
         text: {
           primary: '#F1F0FB', // Soft, slightly bluish white
           secondary: '#C8C8C9' // Silver gray for secondary text

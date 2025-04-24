@@ -13,7 +13,7 @@ const blogPosts = [
     title: "Getting Started with React",
     excerpt: "Learn the basics of React and how to build your first component.",
     date: "2025-03-10",
-    readTime: "5 min read",
+
     category: "Development",
     tags: ["React", "JavaScript", "Web Development"]
   },
@@ -22,7 +22,7 @@ const blogPosts = [
     title: "Advanced Data Science Techniques",
     excerpt: "Explore advanced techniques in data science and machine learning.",
     date: "2025-02-15",
-    readTime: "8 min read",
+
     category: "Data Science",
     tags: ["Python", "Machine Learning", "Data"]
   },
@@ -31,7 +31,7 @@ const blogPosts = [
     title: "The Future of AI",
     excerpt: "Thoughts on where artificial intelligence is headed in the next decade.",
     date: "2025-01-20",
-    readTime: "6 min read",
+
     category: "Technology",
     tags: ["AI", "Future Tech", "Innovation"]
   }
@@ -50,9 +50,9 @@ const Blog = () => {
   return (
     <div className="page-container fade-in">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-2">My Blog</h1>
+        <h1 className="text-4xl font-bold mb-2">my blog</h1>
         <p className="text-muted-foreground mb-8">
-          Thoughts, ideas, and learnings I want to share with the world
+          thoughts, ideas, and learnings i want to share with the world
         </p>
         
         <Tabs defaultValue="All" className="mb-8">
@@ -64,7 +64,7 @@ const Blog = () => {
                 onClick={() => setActiveCategory(category)}
                 className="px-4"
               >
-                {category}
+                {category.toLowerCase()}
               </TabsTrigger>
             ))}
           </TabsList>
@@ -98,6 +98,9 @@ const Blog = () => {
   );
 };
 
+import ShareButtons from "@/components/ShareButtons";
+
+
 // Blog post card component
 const BlogPostCard = ({ post }: { post: any }) => {
   const formattedDate = new Date(post.date).toLocaleDateString('en-US', {
@@ -105,7 +108,10 @@ const BlogPostCard = ({ post }: { post: any }) => {
     month: 'long',
     day: 'numeric'
   });
-  
+
+  // For now, use the blog page URL as postUrl (since there are no per-post pages)
+  const postUrl = `${window.location.origin}/website/blog`;
+
   return (
     <Card className="overflow-hidden">
       <CardHeader>
@@ -115,10 +121,7 @@ const BlogPostCard = ({ post }: { post: any }) => {
             <CalendarDays className="mr-1 h-3 w-3" />
             {formattedDate}
           </span>
-          <span className="flex items-center">
-            <Clock className="mr-1 h-3 w-3" />
-            {post.readTime}
-          </span>
+
         </CardDescription>
       </CardHeader>
       <CardContent>
@@ -128,12 +131,15 @@ const BlogPostCard = ({ post }: { post: any }) => {
             <Badge key={index} variant="secondary">{tag}</Badge>
           ))}
         </div>
+        {/* Social share buttons */}
+        <ShareButtons postUrl={postUrl} postTitle={post.title} />
       </CardContent>
       <CardFooter>
         <Button variant="outline" className="w-full">
           Read More <ArrowRight className="ml-2 h-4 w-4" />
         </Button>
       </CardFooter>
+
     </Card>
   );
 };

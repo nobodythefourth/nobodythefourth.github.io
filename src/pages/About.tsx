@@ -11,82 +11,26 @@ const About = () => {
         
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Who I Am</CardTitle>
-            <CardDescription>A brief introduction</CardDescription>
+            <CardTitle>who i am</CardTitle>
           </CardHeader>
           <CardContent className="space-y-4">
-            <p>
-              Hello! I'm a passionate [Your Profession/Interest] with a keen interest in [Your Interests]. 
-              I love building things, solving problems, and continuously learning new technologies.
-            </p>
-            <p>
-              With experience in [Your Skills/Experience], I enjoy tackling complex challenges and creating 
-              elegant solutions. When I'm not coding, you can find me [Your Hobbies/Activities].
-            </p>
+            <p>i am a nobody who is here to help others, since in doing so I help myself</p>
           </CardContent>
         </Card>
         
         <Card className="mb-8">
           <CardHeader>
-            <CardTitle>Skills & Expertise</CardTitle>
-            <CardDescription>What I bring to the table</CardDescription>
+            <CardTitle>skills & expertise</CardTitle>
           </CardHeader>
           <CardContent>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              <div>
-                <h3 className="text-lg font-medium mb-2">Technical Skills</h3>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Skill 1</li>
-                  <li>Skill 2</li>
-                  <li>Skill 3</li>
-                  <li>Skill 4</li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-medium mb-2">Soft Skills</h3>
-                <ul className="list-disc pl-5 space-y-1">
-                  <li>Skill 1</li>
-                  <li>Skill 2</li>
-                  <li>Skill 3</li>
-                  <li>Skill 4</li>
-                </ul>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-        
-        <Card>
-          <CardHeader>
-            <CardTitle>Experience & Education</CardTitle>
-            <CardDescription>My professional journey</CardDescription>
-          </CardHeader>
-          <CardContent className="space-y-6">
-            <div>
-              <h3 className="text-lg font-medium">Experience</h3>
-              <div className="mt-2 space-y-4">
-                <div>
-                  <div className="font-medium">Position Title</div>
-                  <div className="text-sm text-muted-foreground">Company Name • 2020 - Present</div>
-                  <p className="mt-1">Brief description of your role and accomplishments.</p>
-                </div>
-                <div>
-                  <div className="font-medium">Previous Position</div>
-                  <div className="text-sm text-muted-foreground">Previous Company • 2018 - 2020</div>
-                  <p className="mt-1">Brief description of your role and accomplishments.</p>
-                </div>
-              </div>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-medium">Education</h3>
-              <div className="mt-2 space-y-4">
-                <div>
-                  <div className="font-medium">Degree Name</div>
-                  <div className="text-sm text-muted-foreground">University Name • Graduation Year</div>
-                  <p className="mt-1">Brief description of your studies and achievements.</p>
-                </div>
-              </div>
-            </div>
+            <p>
+              i graduated UC Berkeley with a bachelors in math.<br/>
+              i enjoy building and exploring the frontier of technology.<br/>
+              i enjoy leading and shaping the world in a way I deem fit. that is power. people have trusted me with it.<br/>
+              i love studying people too.<br/>
+              <br/>
+              in essence, i am a nerd and a geek who loves to lead.
+            </p>
           </CardContent>
         </Card>
         

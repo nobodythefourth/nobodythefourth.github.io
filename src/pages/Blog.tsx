@@ -10,30 +10,11 @@ import { CalendarDays, Clock, ArrowRight } from "lucide-react";
 const blogPosts = [
   {
     id: 1,
-    title: "Getting Started with React",
-    excerpt: "Learn the basics of React and how to build your first component.",
-    date: "2025-03-10",
-
-    category: "Development",
-    tags: ["React", "JavaScript", "Web Development"]
-  },
-  {
-    id: 2,
-    title: "Advanced Data Science Techniques",
-    excerpt: "Explore advanced techniques in data science and machine learning.",
-    date: "2025-02-15",
-
-    category: "Data Science",
-    tags: ["Python", "Machine Learning", "Data"]
-  },
-  {
-    id: 3,
-    title: "The Future of AI",
-    excerpt: "Thoughts on where artificial intelligence is headed in the next decade.",
-    date: "2025-01-20",
-
-    category: "Technology",
-    tags: ["AI", "Future Tech", "Innovation"]
+    title: "placeholder",
+    excerpt: "this is a placeholder post.",
+    date: "2025-04-24",
+    category: "general",
+    tags: ["placeholder"]
   }
 ];
 

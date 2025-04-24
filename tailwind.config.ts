@@ -20,6 +20,7 @@ export default {
     },
     extend: {
       colors: {
+        border: '#333333', // Added border color
         background: {
           DEFAULT: '#000000', // Pure black
           foreground: '#FFFFFF' // White text
@@ -33,4 +34,3 @@ export default {
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-

@@ -38,7 +38,7 @@ const Index = () => {
             ${scrolled ? 'opacity-0 translate-y-[-50px]' : 'opacity-100 translate-y-0'} 
             text-[#F1F0FB]`}
         >
-          playground
+          my playground
         </h1>
       </div>
 

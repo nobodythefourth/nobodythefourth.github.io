@@ -109,8 +109,8 @@ const BlogPostCard = ({ post }: { post: any }) => {
     day: 'numeric'
   });
 
-  // For now, use the blog page URL as postUrl (since there are no per-post pages)
-  const postUrl = `${window.location.origin}/website/blog`;
+  // Use the deployed blog page URL for sharing
+  const postUrl = `https://nobodythefourth.github.io/playground/`;
 
   return (
     <Card className="overflow-hidden">

@@ -10,7 +10,7 @@ const Contact = () => {
           <CardTitle>contact</CardTitle>
         </CardHeader>
         <CardContent>
-          <span>feel free to reach out to share ideas or anything else: </span>
+          <span>reach out for anything: </span>
           <a
             href="mailto:nobody.the.fourth@gmail.com"
             className="text-blue-600 hover:underline break-all"

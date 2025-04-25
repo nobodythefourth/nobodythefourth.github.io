@@ -6,19 +6,9 @@ import { Badge } from "@/components/ui/badge";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { CalendarDays, Clock, ArrowRight } from "lucide-react";
 
-// Simulated blog post data
-const blogPosts = [
-  {
-    id: 1,
-    title: "placeholder",
-    excerpt: "this is a placeholder post.",
-    date: "2025-04-24",
-    category: "general",
-    tags: ["placeholder"]
-  }
-];
+import { blogPosts } from "@/data/blogPosts";
 
-// Sample categories
+// TODO: Add more categories
 const categories = ["All", "Development", "Data Science", "Technology"];
 
 const Blog = () => {
@@ -56,7 +46,7 @@ const Blog = () => {
                 <div className="grid gap-6">
                   {filteredPosts.length > 0 &&
                     filteredPosts.map(post => (
-                      <BlogPostCard key={post.id} post={post} />
+                      <BlogPostCard key={post.slug} post={post} />
                     ))}
                 </div>
               )}
@@ -111,8 +101,14 @@ const BlogPostCard = ({ post }: { post: any }) => {
         <ShareButtons postUrl={postUrl} postTitle={post.title} />
       </CardContent>
       <CardFooter>
-        <Button variant="outline" className="w-full">
-          Read More <ArrowRight className="ml-2 h-4 w-4" />
+        <Button 
+          variant="outline" 
+          className="w-full"
+          asChild
+        >
+          <a href={`#/blog/${post.slug}`}>
+            Read More <ArrowRight className="ml-2 h-4 w-4" />
+          </a>
         </Button>
       </CardFooter>
 

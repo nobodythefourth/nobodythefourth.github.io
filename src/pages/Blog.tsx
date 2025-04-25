@@ -54,15 +54,10 @@ const Blog = () => {
             <TabsContent key={category} value={category} className="mt-6">
               {category === activeCategory && (
                 <div className="grid gap-6">
-                  {filteredPosts.length > 0 ? (
+                  {filteredPosts.length > 0 &&
                     filteredPosts.map(post => (
                       <BlogPostCard key={post.id} post={post} />
-                    ))
-                  ) : (
-                    <p className="text-center py-12 text-muted-foreground">
-                      No posts in this category yet. Check back soon!
-                    </p>
-                  )}
+                    ))}
                 </div>
               )}
             </TabsContent>
@@ -71,7 +66,7 @@ const Blog = () => {
         
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">
-            This blog is a work in progress. More articles coming soon!
+            this blog is a work in progress. more articles coming soon.
           </p>
         </div>
       </div>

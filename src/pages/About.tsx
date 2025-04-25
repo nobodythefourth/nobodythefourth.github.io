@@ -35,9 +35,6 @@ const About = () => {
         </Card>
         
         <div className="flex justify-center mt-8">
-          <Button asChild>
-            <Link to="/socials">Connect With Me</Link>
-          </Button>
         </div>
       </div>
     </div>
